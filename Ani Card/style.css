@@ -1,0 +1,39 @@
+body {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  margin: 0;
+
+}
+
+
+.ani-card {
+  height: 300px;
+  width: 200px;
+  background-color: rgb(8, 114, 245);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  position: absolute;
+
+}
+
+.ani-card::before {
+  content: "";
+  position: absolute;
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  background-image:
+  conic-gradient(transparent, #74ff51);
+
+  animation: rotate 0.09s linear infinite;
+}
+
+@keyframes rotate {
+  to {
+   transform: rotate(360deg);
+  }
+}
