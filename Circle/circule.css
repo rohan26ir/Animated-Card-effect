@@ -1,0 +1,54 @@
+body {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  margin: 0;
+
+}
+
+
+.cir-up {
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  background-color: rgb(8, 114, 245);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  position: absolute;
+  overflow: hidden;
+
+}
+
+.cir-up::before {
+  content: "";
+  position: absolute;
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  background-image:
+  conic-gradient(transparent, transparent,transparent, rgb(245, 5, 177));
+
+  animation: rotate 5s linear infinite;
+}
+
+.cir-up .cir-in {
+  position: absolute;
+  height: 280px;
+  width: 280px;
+  border-radius: 50%;
+  background: #222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+@keyframes rotate {
+  to {
+   transform: rotate(360deg);
+  }
+}
