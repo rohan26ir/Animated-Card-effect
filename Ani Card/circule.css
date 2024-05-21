@@ -7,10 +7,10 @@ body {
 }
 
 
-.ani-card {
+.cir-up {
   height: 300px;
-  width: 200px;
-  border-radius: 15px;
+  width: 300px;
+  border-radius: 50%;
   background-color: rgb(8, 114, 245);
 
   display: flex;
@@ -22,24 +22,24 @@ body {
 
 }
 
-.ani-card::before {
+.cir-up::before {
   content: "";
   position: absolute;
   height: 400px;
   width: 400px;
   border-radius: 50%;
   background-image:
-  conic-gradient(transparent, transparent,transparent, rgb(255, 166, 0));
+  conic-gradient(transparent, transparent,transparent, rgb(245, 5, 177));
 
   animation: rotate 5s linear infinite;
 }
 
-.ani-card .inn-card {
+.cir-up .cir-in {
   position: absolute;
   height: 280px;
-  width: 180px;
+  width: 280px;
+  border-radius: 50%;
   background: #222;
-  border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
